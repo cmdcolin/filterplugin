@@ -26,5 +26,7 @@ Alternatively, you can just replace "type" in trackList.json with "FilterPlugin/
 
 This will use the FilterPlugin's track type which adds a track menu option to apply a filter.
 
+## Filter API
 
+The JBrowse filter API includes a basic mixin called FeatureFiltererMixin that adds functions for adding, removing, or chaining multiple filters together. These functions are available globally on the browser object, or on any given track object.
 
