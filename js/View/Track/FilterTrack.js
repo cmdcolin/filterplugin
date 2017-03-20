@@ -18,9 +18,7 @@ function(
                 type: "dijit/CheckedMenuItem",
                 onClick: function() {
                     if(this.checked) {
-                        console.log('here');
                         thisB.addFeatureFilter(function(feat) {
-                            console.log(feat.get('type'));
                             return feat.get('quality')=='high';
                         }, 'myfilter');
                     }
