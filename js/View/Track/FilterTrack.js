@@ -25,6 +25,7 @@ function(
                     else {
                         thisB.removeFeatureFilter('myfilter');
                     }
+                    thisB.redraw();
                 }
             });
             return opts;
