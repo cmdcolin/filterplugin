@@ -16,6 +16,7 @@ function(
             opts.push({
                 label: "Add high quality filter?",
                 type: "dijit/CheckedMenuItem",
+                checked: !!this.config.filterEnabled,
                 onClick: function() {
                     if(this.checked) {
                         thisB.addFeatureFilter(function(feat) {
@@ -25,6 +26,7 @@ function(
                     else {
                         thisB.removeFeatureFilter('myfilter');
                     }
+                    thisB.config.filterEnabled = this.checked;
                     thisB.redraw();
                 }
             });
